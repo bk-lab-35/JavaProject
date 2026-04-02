@@ -6,8 +6,8 @@ public class ATMMain {
 
 	public static void main(String[] args) {
 		Account a = new Account();
-		
-		//Scanner introduced
+
+		// Scanner introduced
 
 		Scanner sc = new Scanner(System.in);
 
