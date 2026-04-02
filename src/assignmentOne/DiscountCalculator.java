@@ -12,15 +12,15 @@ public class DiscountCalculator {
 		newProductPrice = productPrice * discount;
 
 		if (promoCode.equals("Promo5") || promoCode.equals("promo5")) {
-			newPromoCodePrice = productPrice * (1.00 - (discount +.05));
+			newPromoCodePrice = productPrice * (1.00 - (discount + .05));
 			System.out.println("New Product Price after discount is: " + newPromoCodePrice);
 		} else if (promoCode.equals("Promo10") || promoCode.equals("promo10")) {
-			newPromoCodePrice = productPrice * (1.00 - (discount +.10));
+			newPromoCodePrice = productPrice * (1.00 - (discount + .10));
 			System.out.println("New Product Price after discount is: " + newPromoCodePrice);
 		}
 
 		else if (promoCode.equals("Promo20") || promoCode.equals("promo20")) {
-			newPromoCodePrice = productPrice * (1.00 - (discount +.20));
+			newPromoCodePrice = productPrice * (1.00 - (discount + .20));
 			System.out.println("New Product Price after discount is: " + newPromoCodePrice);
 		}
 
