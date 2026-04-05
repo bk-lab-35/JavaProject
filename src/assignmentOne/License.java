@@ -9,8 +9,12 @@ public class License {
 	void validateAgeForLicense() {
 		if (age < 18 && currentLicense.equals("G")) {
 			System.out.println("That is incorrect, you must be atleast 18 for a G License");
+		} else if (age == 17 && currentLicense.equals("G2")) {
+			System.out.println("You must be 18 to be elible for a G license");
+		} else if (age == 16 && currentLicense.equals("G1")) {
+			System.out.println("You must be 17 to be elible for a G2 license");
 		} else if (age < 17 && currentLicense.equals("G2")) {
-			System.out.println("That is incorrect, you must be atleast 17 for a G2 License2");
+			System.out.println("That is incorrect, you must be atleast 17 for a G2 License");
 		} else {
 
 			if (currentLicense.equals("G1")) {
