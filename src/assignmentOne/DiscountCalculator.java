@@ -9,6 +9,7 @@ public class DiscountCalculator {
 	double newPromoCodePrice;
 
 	void calculateDiscount() {
+
 		newProductPrice = productPrice * discount;
 
 		if (promoCode.equals("Promo5") || promoCode.equals("promo5")) {

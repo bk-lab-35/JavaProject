@@ -5,17 +5,23 @@ import java.util.Scanner;
 public class DiscountMain {
 
 	public static void main(String[] args) {
-		DiscountCalculator d = new DiscountCalculator();
+		DiscountCalculator discountCalculator = new DiscountCalculator();
 
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter Product Price: ");
-		d.productPrice = sc.nextDouble();
+		discountCalculator.productPrice = sc.nextDouble();
 
-		System.out.println("Enter Promo Code: ");
-		d.promoCode = sc.next();
+		if (discountCalculator.productPrice <= 0) {
+			System.out.println("Valid product price has not been entered");
+		} else {
 
-		d.calculateDiscount();
+			System.out.println("Enter Promo Code: ");
+			discountCalculator.promoCode = sc.next();
+
+			discountCalculator.calculateDiscount();
+
+		}
 
 	}
 
