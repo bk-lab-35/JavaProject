@@ -18,8 +18,12 @@ public class DiscountMain {
 
 			System.out.println("Enter Promo Code: ");
 			discountCalculator.promoCode = sc.next();
-
-			discountCalculator.calculateDiscount();
+			if (discountCalculator.promoCode.equals("Promo5") || discountCalculator.promoCode.equals("Promo10")
+					|| discountCalculator.promoCode.equals("Promo20")) {
+				discountCalculator.calculateDiscount();
+			} else {
+				System.out.println("Invalid Promo Input");
+			}
 
 		}
 

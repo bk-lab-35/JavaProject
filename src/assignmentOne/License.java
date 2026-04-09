@@ -18,9 +18,9 @@ public class License {
 		} else {
 
 			if (currentLicense.equals("G1")) {
-				System.out.println("You are eligible for a G2");
+				System.out.println("You are eligible for a G2 license");
 			} else if (currentLicense.equals("G2")) {
-				System.out.println("You are eligible for a G");
+				System.out.println("You are eligible for a G license");
 			} else if (currentLicense.equals("G")) {
 				System.out.println("You have a G license");
 			} else {

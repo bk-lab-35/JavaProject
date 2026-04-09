@@ -17,9 +17,13 @@ public class LicenseMain {
 		} else {
 			System.out.println("Enter your Current License: ");
 			licenseUser.currentLicense = sc.next();
-			licenseUser.validateAgeForLicense();
+			if (licenseUser.currentLicense.equals("G1") || licenseUser.currentLicense.equals("G2")
+					|| licenseUser.currentLicense.equals("G")) {
+				licenseUser.validateAgeForLicense();
+			} else {
+				System.out.println("Invalid License Input");
+			}
 		}
 
 	}
-
 }
