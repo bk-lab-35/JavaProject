@@ -10,23 +10,29 @@ public class DiscountMain {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter Product Price: ");
-		discountCalculator.productPrice = sc.nextDouble();
 
-		if (discountCalculator.productPrice <= 0) {
-			System.out.println("Valid product price has not been entered");
-		} else {
+		if (sc.hasNextDouble()) {
+			discountCalculator.productPrice = sc.nextDouble();
 
-			System.out.println("Enter Promo Code: ");
-			discountCalculator.promoCode = sc.next();
-			if (discountCalculator.promoCode.equals("Promo5") || discountCalculator.promoCode.equals("Promo10")
-					|| discountCalculator.promoCode.equals("Promo20")) {
-				discountCalculator.calculateDiscount();
+			if (discountCalculator.productPrice <= 0) {
+				System.out.println("Valid product price has not been entered");
 			} else {
-				System.out.println("Invalid Promo Input");
+
+				System.out.println("Enter Promo Code: ");
+				discountCalculator.promoCode = sc.next();
+				if (discountCalculator.promoCode.equals("Promo5") || discountCalculator.promoCode.equals("Promo10")
+						|| discountCalculator.promoCode.equals("Promo20")
+						|| discountCalculator.promoCode.equals("None")) {
+					discountCalculator.calculateDiscount();
+				} else {
+					System.out.println("Invalid Promo Input");
+				}
+
 			}
 
+		} else {
+			System.out.println("Valid product price has not been entered");
 		}
-
 	}
 
 }

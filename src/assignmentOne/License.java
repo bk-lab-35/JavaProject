@@ -13,6 +13,8 @@ public class License {
 			System.out.println("You must be 18 to be eligible for a G license");
 		} else if (age == 16 && currentLicense.equals("G1")) {
 			System.out.println("You must be 17 to be eligible for a G2 license");
+		} else if (age == 16 && currentLicense.equals("G1")) {
+			System.out.println("You are eligible for a G1 license");
 		} else if (age < 17 && currentLicense.equals("G2")) {
 			System.out.println("That is incorrect, you must be atleast 17 for a G2 License");
 		} else {
