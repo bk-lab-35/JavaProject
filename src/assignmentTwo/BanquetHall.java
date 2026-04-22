@@ -16,7 +16,7 @@ public class BanquetHall {
 			cess = .04;
 		} else if (numberOfGuests <= 80) {
 			cess = .08;
-		} else if (numberOfGuests < 150) {
+		} else if (numberOfGuests <= 150) {
 			cess = .10;
 		} else {
 			cess = .125;
