@@ -10,16 +10,21 @@ public class PhoneMain {
 
 		System.out.println("Enter Product Name you are looking for : ");
 		String brand = sc.nextLine();
-		phoneBrand.displayProductName(brand);
-		
-		System.out.println("\nEnter product name from the list above: ");
-        String selectedProduct = sc.nextLine();
-        
-        if (phoneBrand.selectProducts(brand, selectedProduct)) {
-            System.out.println("product selected is : " + selectedProduct);
-        } else {
-            System.out.println("Please select a product from the list");
-        }
+		if (brand.equals("apple") || brand.equals("samsung") || brand.equals("google")) {
+			phoneBrand.displayProductName(brand);
 
+			System.out.println("\nEnter product name from the list above: ");
+			String selectedProduct = sc.nextLine();
+
+			if (phoneBrand.selectProducts(brand, selectedProduct)) {
+				System.out.println("product selected is : " + selectedProduct);
+			} else {
+				System.out.println("Please select a product from the list");
+			}
+
+		}
+		else {
+			System.out.println("Please enter eligible brand");
+		}
 	}
 }
