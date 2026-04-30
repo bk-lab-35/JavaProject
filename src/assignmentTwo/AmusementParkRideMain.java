@@ -2,7 +2,7 @@ package assignmentTwo;
 
 public class AmusementParkRideMain {
 	public static void main(String[] args) {
-		Person person1 = new Person(300, 300);
+		Person person1 = new Person("JOhn", 300, 300);
 
 		AmusementParkRide amusementPark = new AmusementParkRide();
 
