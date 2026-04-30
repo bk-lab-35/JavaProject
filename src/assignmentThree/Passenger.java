@@ -26,7 +26,6 @@ public class Passenger {
 	public enum SeatClass {
 		ECONOMY, 
 		BUSINESS
-
 	}
 
 }
