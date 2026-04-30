@@ -18,11 +18,14 @@ public class Passenger {
 	}
 
 	public enum PassengerType {
-		ADULT, CHILD, SENIOR
+		ADULT, 
+		CHILD, 
+		SENIOR
 	}
 
 	public enum SeatClass {
-		ECONOMY, BUSINESS
+		ECONOMY, 
+		BUSINESS
 
 	}
 
