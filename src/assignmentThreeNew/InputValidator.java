@@ -33,7 +33,7 @@ public class InputValidator {
 
 	public static PassengerType getValidatedPassengerType(Scanner sc) {
 		while (true) {
-			System.out.print("Enter Passenger Type (ADULT/CHILD/SENIOR): ");
+			System.out.print("Enter Passenger Type: ");
 			String typeStr = sc.nextLine().toUpperCase();
 			if (Passenger.isValidPassengerType(typeStr)) {
 				return PassengerType.valueOf(typeStr);
@@ -44,7 +44,7 @@ public class InputValidator {
 
 	public static SeatClass getValidatedSeatClass(Scanner sc) {
 		while (true) {
-			System.out.print("Enter Seat Class (ECONOMY/BUSINESS): ");
+			System.out.print("Enter Seat Class: ");
 			String seatStr = sc.nextLine().toUpperCase();
 			if (Passenger.isValidSeatClass(seatStr)) {
 				return SeatClass.valueOf(seatStr);
