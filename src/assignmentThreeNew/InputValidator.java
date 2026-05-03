@@ -103,7 +103,7 @@ public class InputValidator {
 	}
 
 	public static ArrayList<Passenger> collectAllPassengers(Scanner sc) {
-		int numOfPassenger = getValidatedInt(sc, "Enter number of passengers to book");
+		int numOfPassenger = getValidatedInt(sc, "number of passengers to book");
 
 		ArrayList<Passenger> passengerList = new ArrayList<>();
 
