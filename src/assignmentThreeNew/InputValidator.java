@@ -76,7 +76,7 @@ public class InputValidator {
 	}
 
 	public static boolean isValidAge(int age) {
-		return age >= 0;
+		return age > 0;
 	}
 
 	public static Passenger collectOnePassenger(Scanner sc) {
