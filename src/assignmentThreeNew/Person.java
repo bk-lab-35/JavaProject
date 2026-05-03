@@ -18,7 +18,7 @@ public abstract class Person {
 	}
 
 	public static boolean isValidAge(int age) {
-		return age >= 0;
+		return age > 0;
 	}
 
 	public static boolean isValidName(String name) {
