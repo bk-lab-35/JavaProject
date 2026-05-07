@@ -8,8 +8,4 @@ public interface BookingInterface {
 
 	String getBookingStatus();
 
-	default void displayBookingInfo() {
-		System.out.println("Booking: " + getBookingStatus());
-		System.out.println("Total Fare: $" + calculateTotalFare());
-	}
 }
